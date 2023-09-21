@@ -1,6 +1,6 @@
 
 const apiKey = 'd6077a0f';
-
+const buscarBtn = document.getElementById('buscarBtn');
 // Función para buscar información de una película por título
 function buscarPelicula() {
     const tituloPelicula = document.getElementById('tituloPelicula').value;
@@ -48,7 +48,7 @@ function buscarPelicula() {
     }
     
     // Agrega un evento de clic al botón de búsqueda
-    const buscarBtn = document.getElementById('buscarBtn');
+    
     buscarBtn.addEventListener('click', buscarPelicula);
     
     // Agrega un evento para buscar la película cuando se presiona la tecla "Enter" en el campo de entrada de texto
